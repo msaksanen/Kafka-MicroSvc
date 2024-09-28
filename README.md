@@ -1,0 +1,1 @@
+Microservices example: Producer, Consumer, Kafka, Zookeeper, Kakfka-UI in Docker compose stack
