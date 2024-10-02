@@ -1,0 +1,27 @@
+{
+	"type": "record",
+	"name": "orderRequest",
+	"namespace": "ksql",
+	"fields": [
+		{
+			"name": "orderId",
+			"type": "long"
+		},
+		{
+			"name": "orderDate",
+			"type": "string"
+		},
+		{
+			"name": "products",
+			"type": {
+				"type": "array",
+				"items": "string"
+			}
+		},
+		{
+			"name": "totalAmount",
+			"type": "long"
+		}
+	],
+	"connect.name": "ksql.orderRequest"
+}
