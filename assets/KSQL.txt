@@ -1,3 +1,6 @@
+CREATE TABLE orderRequest_table (id VARCHAR PRIMARY KEY)
+  WITH (KAFKA_TOPIC='orderRequest', VALUE_FORMAT='AVRO');
 
-CREATE TABLE users_table (id VARCHAR PRIMARY KEY)
-  WITH (KAFKA_TOPIC='users', VALUE_FORMAT='AVRO');
+
+CREATE STREAM orderRequest_stream (id VARCHAR KEY)
+  WITH (KAFKA_TOPIC='orderRequest', VALUE_FORMAT='AVRO');
